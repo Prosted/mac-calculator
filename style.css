@@ -27,12 +27,15 @@ table td{
 
 table input{
     margin-left: -1px;
-    width: 91%;
+    width: 101%;
     height: 102%;
     border: none;
     background-color: #4B4B4B;
     text-align: right;
     padding: 0px 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: white;
 }
 
 input:focus{
