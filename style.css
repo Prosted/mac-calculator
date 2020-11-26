@@ -1,0 +1,67 @@
+body{
+    height: 100vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 30%;
+    height: 80%;
+    text-align: center;
+    font-size: 30px;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 25px;
+    border: 1px solid black;
+    position: relative;
+}
+
+table td{
+    background-color: #E1E1E1;
+    cursor: pointer;
+}
+
+.calculate-button{
+    background-color: #F5933C;
+}
+
+table input{
+    margin-left: -1px;
+    width: 91%;
+    height: 102%;
+    border: none;
+    background-color: #4B4B4B;
+    text-align: right;
+    padding: 0px 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.mac-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 5%;
+    position: absolute;
+    top: 88px;
+    left:493px;
+    z-index: 10;
+}
+
+.mac-button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FC5854;
+    cursor: pointer;
+}
+
+.mac-button:nth-child(2){
+    background-color: #FEC03F;
+}
+
+.mac-button:last-child{
+    background-color: #31C949;
+}

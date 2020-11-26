@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥 계산기 만들기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table border="1">
+        <div class="mac-buttons">
+            <div class="mac-button" onclick="alert('창 종료')"></div>
+            <div class="mac-button" onclick="alert('창 숨기기')"></div>
+            <div class="mac-button" onclick="alert('칭 전체화면')"></div>
+        </div>
+        <tr>
+            <td colspan="4"><input id="display" type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input id="result" type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="3" onclick="initValue()">AC</td>
+            <td class="calculate-button" onclick="add('/')">/</td>
+        </tr>
+        <tr>
+            <td  onclick="add(7)">7</td>
+            <td  onclick="add(8)">8</td>
+            <td  onclick="add(9)">9</td>
+            <td class="calculate-button"  onclick="add('*')">X</td>
+        </tr>
+        <tr>
+            <td onclick="add(4)">4</td>
+            <td onclick="add(5)">5</td>
+            <td onclick="add(6)">6</td>
+            <td class="calculate-button"  onclick="add('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="add(1)">1</td>
+            <td onclick="add(2)">2</td>
+            <td onclick="add(3)">3</td>
+            <td class="calculate-button"  onclick="add('+')">+</td>
+        </tr>
+        <tr>
+            <td colspan="2"  onclick="add(0)">0</td>
+            <td  onclick="add('.')">.</td>
+            <td class="calculate-button" onclick="calculate()">=</td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
